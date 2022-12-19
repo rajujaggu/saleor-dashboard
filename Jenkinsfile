@@ -18,7 +18,7 @@ pipeline{
         }
         stage ('push'){
             steps{
-               sh 'docker image push rajreddy999/saleor-dashboard:Dev'
+               sh 'docker push rajreddy999/saleor-dashboard:Dev'
             }
         }
     }
