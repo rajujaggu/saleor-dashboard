@@ -16,7 +16,7 @@ pipeline{
                 sh 'docker image build -t rajreddy999/saleor-dashboard:Dev .'
             }
         }
-        stage ('build'){
+        stage ('push'){
             steps{
                sh 'docker image push rajreddy999/saleor-dashboard:Dev'
             }
