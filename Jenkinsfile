@@ -14,7 +14,11 @@ pipeline{
         stage ('build'){
             steps{
                 sh 'docker image build -t rajreddy999/saleor-dashboard:Dev .'
-                sh 'docker image push rajreddy999/saleor-dashboard:Dev'
+            }
+        }
+        stage ('build'){
+            steps{
+               sh 'docker image push rajreddy999/saleor-dashboard:Dev'
             }
         }
     }
